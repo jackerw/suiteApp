@@ -35,12 +35,12 @@
           厨电
         </ion-segment-button>
       </ion-segment>
-      <div [ngSwitch]="change" class="stylebg">
+      <div [ngSwitch]="change" class="stylebg"  (click)="goListinfo()">
           <ion-list *ngSwitchCase="'stye1'">
              <ion-item>
                     <h3>风格</h3>
                     <div class="listcon">
-                          <span class="active" (click)="goListinfo()">全部</span>
+                          <span class="active">全部</span>
                           <span>现代风格</span>
                           <span>欧式风格</span>
                           <span>新实用主义</span>

@@ -1,0 +1,9 @@
+$prdcolor:#666666;
+.prdlistinfo{
+	color:$prdcolor;font-size:16px;
+	.showlist > div{width:49.5%;float: left;}
+	.showlist > div:nth-child(2n){margin-left:1%;}
+	.showlist > div .info{padding:2px 0 8px 10px;}
+	.showlist > div  img{width:100%;}
+	.showlist .price{display: block;font-style: normal;color: #c40000;}
+}
