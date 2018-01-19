@@ -14,6 +14,11 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+/*变量样式*/
+$maincolor:#d72325;
+$fontcolor:#d72325;
+$headbg:#d72325;
+
 .back-button-ios{color: #fff;}
 .toolbar-background{background: #3890d3;color: #fff;}
 .toolbar-title{color: #fff;}
@@ -50,40 +55,10 @@
 
 .icon-jiaju-copy:before { content: "\e600"; }
 
-/*变量样式*/
-$maincolor:#d72325;
-$fontcolor:#d72325;
-$headbg:#d72325;
+
 /*头部样式*/
 .toolbar-background{background: $headbg;}
 /*底部样式*/
 .tabs-ios .tab-button[aria-selected=true] .tab-button-icon{color: $maincolor;}
 .tabs-ios .tab-button[aria-selected=true]{color:$fontcolor;}
 
-
-
-
-.menustyle{background: #eee;}
-.menustyle .scroll-content{display: flex;display: -webkit-flex;justify-content:space-between;}
-.menustyle ion-segment{width: 25%;height: 100%;display: block;background: #eee;}
-.menustyle .segment-md .segment-button, .menustyle .segment-ios .segment-button{display: block;width:100%;font-size:14px;border-bottom-width:1px;border-color: #E1E1E1;color: #9B9B9B;}
-.menustyle .segment-md .segment-button.activated, 
-.menustyle .segment-md .segment-button.segment-activated,
-.menustyle .segment-ios .segment-button.segment-activated{border-color: #E1E1E1;background: #fff;color: #333;border-right:0 none;}
-.menustyle .stylebg{width: 75%;background: #fff;}
-
-.stylebg h3{border-bottom:1px solid #ddd;padding: 10px 0;font-size:14px;}
-.stylebg .listcon{display: flex;display: -webkit-flex;font-size: 12px;flex-wrap: wrap;}
-.stylebg .listcon span{margin-top:10px;margin-right:12px;padding: 2px 5px;border:1px solid #ddd;border-radius: 5px;min-width:65px;text-align: center;}
-.stylebg .listcon span:active{background: #3890d3;color: #fff;border:1px solid #3890d3;}
-.stylebg .label-md{margin:0;}
-.stylebg .list-md,
-.list-ios{margin:0;}
-.stylebg .list-md .item-block .item-inner,
-.stylebg .list-ios .item-block .item-inner,
-.stylebg .list-ios > .item-block:last-child, .stylebg .list-ios > .item-wrapper:last-child .item-block{border-bottom:0 none;}
-.stylebg .stylebutton{width:60%;height: 30px;margin:20px auto;display: block;}
-.stylebg .listcon .active{background: #3890d3;color: #fff;border:1px solid #3890d3;}
-.menu-header .imgmenu{position: absolute;right: 20px;margin-right: 0;z-index: 999;}
-.bar-buttons-md{top:14px;}
-.bar-buttons-ios{top:8px;}

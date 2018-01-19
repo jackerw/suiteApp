@@ -11,8 +11,317 @@
   </ion-navbar>
 
 </ion-header>
-
-
-<ion-content padding>
-
+<ion-content class="menustyle">
+      <ion-segment [(ngModel)]="change">
+        <ion-segment-button value="stye1">
+          厨房
+        </ion-segment-button>
+        <ion-segment-button value="stye2">
+          衣柜
+        </ion-segment-button>
+        <ion-segment-button value="stye3">
+          儿童房
+        </ion-segment-button>
+        <ion-segment-button value="stye4">
+          卧室
+        </ion-segment-button>
+        <ion-segment-button value="stye5">
+          客餐厅
+        </ion-segment-button>
+        <ion-segment-button value="stye6">
+          书房
+        </ion-segment-button>
+        <ion-segment-button value="stye7">
+          厨电
+        </ion-segment-button>
+      </ion-segment>
+      <div [ngSwitch]="change" class="stylebg">
+          <ion-list *ngSwitchCase="'stye1'">
+             <ion-item>
+                    <h3>风格</h3>
+                    <div class="listcon">
+                          <span class="active" (click)="goListinfo()">全部</span>
+                          <span>现代风格</span>
+                          <span>欧式风格</span>
+                          <span>新实用主义</span>
+                    </div>
+             </ion-item>
+              <ion-item>
+                    <h3>面积</h3>
+                    <div class="listcon">
+                          <span>全部</span>
+                          <span>25m以下</span>
+                          <span>25m-30m</span>
+                          <span>35m-38m</span>
+                          <span>38m以上</span>
+                    </div>
+             </ion-item>
+             <ion-item>
+                    <h3>功能</h3>
+                    <div class="listcon">
+                          <span>全部</span>
+                          <span>电视柜组合</span>
+                          <span>隔断柜组合</span>
+                          <span>沙发茶几组合</span>
+                          <span>餐桌组合</span>
+                    </div>
+             </ion-item>
+             <ion-item>
+                    <h3>价格</h3>
+                    <div class="listcon">
+                          <span>全部</span>
+                          <span>10000元以下</span>
+                          <span>10000元-12000元</span>
+                          <span>12000元-14000元</span>
+                          <span>14000元-16000元</span>
+                    </div>
+             </ion-item>
+          </ion-list>
+          <ion-list *ngSwitchCase="'stye2'">
+              <ion-item>
+                    <h3>风格2</h3>
+                    <div class="listcon">
+                         <span>全部</span>
+                          <span>现代风格</span>
+                          <span>欧式风格</span>
+                          <span>新实用主义</span>
+                    </div>
+             </ion-item>
+              <ion-item>
+                    <h3>面积</h3>
+                    <div class="listcon">
+                         <span>全部</span>
+                          <span>25m以下</span>
+                          <span>25m-30m</span>
+                          <span>35m-38m</span>
+                          <span>38m以上</span>
+                    </div>
+             </ion-item>
+             <ion-item>
+                    <h3>功能</h3>
+                    <div class="listcon">
+                         <span>全部</span>
+                          <span>电视柜组合</span>
+                          <span>隔断柜组合</span>
+                          <span>沙发茶几组合</span>
+                          <span>餐桌组合</span>
+                    </div>
+             </ion-item>
+             <ion-item>
+                    <h3>价格</h3>
+                    <div class="listcon">
+                         <span>全部</span>
+                          <span>10000元以下</span>
+                          <span>10000元-12000元</span>
+                          <span>12000元-14000元</span>
+                          <span>14000元-16000元</span>
+                    </div>
+             </ion-item>
+          </ion-list>
+          <ion-list *ngSwitchCase="'stye3'">
+              <ion-item>
+                    <h3>风格3</h3>
+                    <div class="listcon">
+                         <span>全部</span>
+                          <span>现代风格</span>
+                          <span>欧式风格</span>
+                          <span>新实用主义</span>
+                    </div>
+             </ion-item>
+              <ion-item>
+                    <h3>面积</h3>
+                    <div class="listcon">
+                         <span>全部</span>
+                          <span>25m以下</span>
+                          <span>25m-30m</span>
+                          <span>35m-38m</span>
+                          <span>38m以上</span>
+                    </div>
+             </ion-item>
+             <ion-item>
+                    <h3>功能</h3>
+                    <div class="listcon">
+                         <span>全部</span>
+                          <span>电视柜组合</span>
+                          <span>隔断柜组合</span>
+                          <span>沙发茶几组合</span>
+                          <span>餐桌组合</span>
+                    </div>
+             </ion-item>
+             <ion-item>
+                    <h3>价格</h3>
+                    <div class="listcon">
+                         <span>全部</span>
+                          <span>10000元以下</span>
+                          <span>10000元-12000元</span>
+                          <span>12000元-14000元</span>
+                          <span>14000元-16000元</span>
+                    </div>
+             </ion-item>
+          </ion-list>
+          <ion-list *ngSwitchCase="'stye4'">
+              <ion-item>
+                    <h3>风格4</h3>
+                    <div class="listcon">
+                         <span>全部</span>
+                          <span>现代风格</span>
+                          <span>欧式风格</span>
+                          <span>新实用主义</span>
+                    </div>
+             </ion-item>
+              <ion-item>
+                    <h3>面积</h3>
+                    <div class="listcon">
+                         <span>全部</span>
+                          <span>25m以下</span>
+                          <span>25m-30m</span>
+                          <span>35m-38m</span>
+                          <span>38m以上</span>
+                    </div>
+             </ion-item>
+             <ion-item>
+                    <h3>功能</h3>
+                    <div class="listcon">
+                         <span>全部</span>
+                          <span>电视柜组合</span>
+                          <span>隔断柜组合</span>
+                          <span>沙发茶几组合</span>
+                          <span>餐桌组合</span>
+                    </div>
+             </ion-item>
+             <ion-item>
+                    <h3>价格</h3>
+                    <div class="listcon">
+                         <span>全部</span>
+                          <span>10000元以下</span>
+                          <span>10000元-12000元</span>
+                          <span>12000元-14000元</span>
+                          <span>14000元-16000元</span>
+                    </div>
+             </ion-item>
+          </ion-list>
+          <ion-list *ngSwitchCase="'stye5'">
+             <ion-item>
+                    <h3>风格5</h3>
+                    <div class="listcon">
+                         <span>全部</span>
+                          <span>现代风格</span>
+                          <span>欧式风格</span>
+                          <span>新实用主义</span>
+                    </div>
+             </ion-item>
+              <ion-item>
+                    <h3>面积</h3>
+                    <div class="listcon">
+                         <span>全部</span>
+                          <span>25m以下</span>
+                          <span>25m-30m</span>
+                          <span>35m-38m</span>
+                          <span>38m以上</span>
+                    </div>
+             </ion-item>
+             <ion-item>
+                    <h3>功能</h3>
+                    <div class="listcon">
+                         <span>全部</span>
+                          <span>电视柜组合</span>
+                          <span>隔断柜组合</span>
+                          <span>沙发茶几组合</span>
+                          <span>餐桌组合</span>
+                    </div>
+             </ion-item>
+             <ion-item>
+                    <h3>价格</h3>
+                    <div class="listcon">
+                         <span>全部</span>
+                          <span>10000元以下</span>
+                          <span>10000元-12000元</span>
+                          <span>12000元-14000元</span>
+                          <span>14000元-16000元</span>
+                    </div>
+             </ion-item>
+          </ion-list>
+          <ion-list *ngSwitchCase="'stye6'">
+              <ion-item>
+                    <h3>风格6</h3>
+                    <div class="listcon">
+                         <span>全部</span>
+                          <span>现代风格</span>
+                          <span>欧式风格</span>
+                          <span>新实用主义</span>
+                    </div>
+             </ion-item>
+              <ion-item>
+                    <h3>面积</h3>
+                    <div class="listcon">
+                         <span>全部</span>
+                          <span>25m以下</span>
+                          <span>25m-30m</span>
+                          <span>35m-38m</span>
+                          <span>38m以上</span>
+                    </div>
+             </ion-item>
+             <ion-item>
+                    <h3>功能</h3>
+                    <div class="listcon">
+                         <span>全部</span>
+                          <span>电视柜组合</span>
+                          <span>隔断柜组合</span>
+                          <span>沙发茶几组合</span>
+                          <span>餐桌组合</span>
+                    </div>
+             </ion-item>
+             <ion-item>
+                    <h3>价格</h3>
+                    <div class="listcon">
+                         <span>全部</span>
+                          <span>10000元以下</span>
+                          <span>10000元-12000元</span>
+                          <span>12000元-14000元</span>
+                          <span>14000元-16000元</span>
+                    </div>
+             </ion-item>
+          </ion-list>
+          <ion-list *ngSwitchCase="'stye7'">
+              <ion-item>
+                    <h3>风格7</h3>
+                    <div class="listcon">
+                         <span>全部</span>
+                          <span>现代风格</span>
+                          <span>欧式风格</span>
+                          <span>新实用主义</span>
+                    </div>
+             </ion-item>
+              <ion-item>
+                    <h3>面积</h3>
+                    <div class="listcon">
+                         <span>全部</span>
+                          <span>25m以下</span>
+                          <span>25m-30m</span>
+                          <span>35m-38m</span>
+                          <span>38m以上</span>
+                    </div>
+             </ion-item>
+             <ion-item>
+                    <h3>功能</h3>
+                    <div class="listcon">
+                         <span>全部</span>
+                          <span>电视柜组合</span>
+                          <span>隔断柜组合</span>
+                          <span>沙发茶几组合</span>
+                          <span>餐桌组合</span>
+                    </div>
+             </ion-item>
+             <ion-item>
+                    <h3>价格</h3>
+                    <div class="listcon">
+                         <span>全部</span>
+                          <span>10000元以下</span>
+                          <span>10000元-12000元</span>
+                          <span>12000元-14000元</span>
+                          <span>14000元-16000元</span>
+                    </div>
+             </ion-item>
+          </ion-list>
+        </div>
 </ion-content>

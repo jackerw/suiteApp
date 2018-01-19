@@ -1,3 +1,28 @@
-page-prd-list {
-
+.menustyle {
+	ion-segment{overflow-y: auto;}
 }
+
+
+
+
+.menustyle{background: #eee;}
+.menustyle .scroll-content{display: flex;display: -webkit-flex;justify-content:space-between;}
+.menustyle ion-segment{width: 20%;height: 100%;display: block;background: #eee;}
+.menustyle .segment-md .segment-button, .menustyle .segment-ios .segment-button{display: block;width:100%;font-size:14px;border-bottom-width:1px;border-color: #E1E1E1;color: #9B9B9B;}
+.menustyle .segment-md .segment-button.activated, 
+.menustyle .segment-md .segment-button.segment-activated,
+.menustyle .segment-ios .segment-button.segment-activated{border-color: #E1E1E1;background: #fff;color: #333;border-right:0 none;}
+.menustyle .stylebg{width: 80%;background: #fff;}
+
+.stylebg h3{border-bottom:1px solid #ddd;padding: 10px 0;font-size:14px;}
+.stylebg .listcon{display: flex;display: -webkit-flex;font-size: 12px;flex-wrap: wrap;}
+.stylebg .listcon span{margin-top:10px;margin-right:12px;padding: 2px 5px;border:1px solid #ddd;border-radius: 5px;min-width:65px;text-align: center;}
+.stylebg .listcon span:active{background: $maincolor;color: #fff;border:1px solid $maincolor;}
+.stylebg .label-md{margin:0;}
+.stylebg .list-md,
+.list-ios{margin:0;}
+.stylebg .list-md .item-block .item-inner,
+.stylebg .list-ios .item-block .item-inner,
+.stylebg .list-ios > .item-block:last-child, .stylebg .list-ios > .item-wrapper:last-child .item-block{border-bottom:0 none;}
+.stylebg .stylebutton{width:60%;height: 30px;margin:20px auto;display: block;}
+.stylebg .listcon .active{background: $maincolor;color: #fff;border:1px solid $maincolor;}

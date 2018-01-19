@@ -3,9 +3,27 @@
     <ion-title>首页</ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content padding class="homec">
-<button ion-button (click)="goNext()">
-       Go
-</button>
+<ion-content class="prdhome">
+<!--轮播图-->
+<ion-slides pager class="banner">
+  <ion-slide  *ngFor="let item of bannerList.content" >
+    <img src="{{item.banerUrl}}">
+  </ion-slide>
+</ion-slides>
+<!--分类按钮-->
+<section class="sort">
+	<span>
+		<i></i>
+	</span>
+	<span>
+		<i></i>
+	</span>
+	<span>
+		<i></i>
+	</span>
+	<span>
+		<i></i>
+	</span>
+</section>
 </ion-content>
 	

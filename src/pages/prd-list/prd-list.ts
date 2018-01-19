@@ -14,12 +14,15 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'prd-list.html',
 })
 export class PrdListPage {
-
+  change: string ='stye1';
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad PrdListPage');
   }
-
+/*跳转产品列表页*/
+goListinfo(){
+	this.navCtrl.push('PrdListinfoPage')
+}
 }
