@@ -1,6 +1,7 @@
 .prdhome{
 	ion-slides{height: auto;}
 	.banner{
+		.swiper-pagination-bullet{background:0 none;}
 		.swiper-pagination-bullet-active{background: #fff;}
 		button.swiper-pagination-bullet{border:1px solid #fff;opacity: 1;}
 	}

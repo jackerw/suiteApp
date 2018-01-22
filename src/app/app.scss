@@ -17,11 +17,7 @@
 /*变量样式*/
 $maincolor:#d72325;
 $fontcolor:#d72325;
-$headbg:#d72325;
-
-.back-button-ios{color: #fff;}
-.toolbar-background{background: #3890d3;color: #fff;}
-.toolbar-title{color: #fff;}
+$headbg:#fff;
 .bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default{color: #fff;}
 @font-face {font-family: "iconfont";
   src: url('../assets/myfont/iconfont.eot?t=1507601905825'); /* IE9*/
@@ -57,8 +53,13 @@ $headbg:#d72325;
 
 
 /*头部样式*/
+.header-ios .toolbar-background-ios, .footer-ios .toolbar-background-ios{border-bottom:1px solid #e5e5e5;}
 .toolbar-background{background: $headbg;}
+.toolbar-title{color: #2e2e2e;font-weight: normal;}
+
 /*底部样式*/
+.tabs-ios .tabbar{border-top:1px solid #e0e0e0;}
+.tabs-ios .tab-button{color:#808080;}
 .tabs-ios .tab-button[aria-selected=true] .tab-button-icon{color: $maincolor;}
 .tabs-ios .tab-button[aria-selected=true]{color:$fontcolor;}
 
