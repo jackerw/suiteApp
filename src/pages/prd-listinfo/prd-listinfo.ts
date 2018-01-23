@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {PrdconProvider} from"../../providers/prdcon/prdcon"
 
 /**
  * Generated class for the PrdListinfoPage page.
@@ -14,12 +15,23 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'prd-listinfo.html',
 })
 export class PrdListinfoPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  prdlistData:any=[];
+  constructor(
+  	public navCtrl: NavController,
+  	public navParams: NavParams,
+  	public PrdconProvider:PrdconProvider
+  	)
+ {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad PrdListinfoPage');
+    this.PrdconProvider.getPrdListData().then(data=>{
+    	this.prdlistData=data;
+    })
   }
-
+ /*分页*/
+ showList(infiniteScroll){
+ 	console.log('ok')
+	infiniteScroll.complete();
+ }
 }

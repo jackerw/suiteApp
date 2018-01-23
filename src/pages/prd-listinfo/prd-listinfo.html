@@ -29,47 +29,17 @@
 		</ion-grid>
 	</div>
 	<div class="showlist">
-		<div>
-			<img src="http://img1.pianor.com/product/2017/06/01/2017060115082993857.jpg">
+		<div  *ngFor="let items of prdlistData.content">
+			<img src="{{items.prdlistUrl}}">
 			<div class="info">
-				<span>现代简约客餐厅效果图</span>
-				<em class="price">¥ 16000元以上</em>
-			</div>
-		</div>
-		<div>
-			<img src="http://img1.pianor.com/product/2017/06/01/2017060115082993857.jpg">
-			<div class="info">
-				<span>现代简约客餐厅效果图</span>
-				<em class="price">¥ 16000元以上</em>
-			</div>
-		</div>
-		<div>
-			<img src="http://img1.pianor.com/product/2017/06/01/2017060115082993857.jpg">
-			<div class="info">
-				<span>现代简约客餐厅效果图</span>
-				<em class="price">¥ 16000元以上</em>
-			</div>
-		</div>
-		<div>
-			<img src="http://img1.pianor.com/product/2017/06/01/2017060115082993857.jpg">
-			<div class="info">
-				<span>现代简约客餐厅效果图</span>
-				<em class="price">¥ 16000元以上</em>
-			</div>
-		</div>
-		<div>
-			<img src="http://img1.pianor.com/product/2017/06/01/2017060115082993857.jpg">
-			<div class="info">
-				<span>现代简约客餐厅效果图</span>
-				<em class="price">¥ 16000元以上</em>
-			</div>
-		</div>
-		<div>
-			<img src="http://img1.pianor.com/product/2017/06/01/2017060115082993857.jpg">
-			<div class="info">
-				<span>现代简约客餐厅效果图</span>
-				<em class="price">¥ 16000元以上</em>
+				<span>{{items.prdlistTitle}}</span>
+				<em class="price">{{items.price}}元</em>
 			</div>
 		</div>
 	</div>
+ <ion-infinite-scroll (ionInfinite)="showList($event)"  loadingSpinner="bubbles"
+      loadingText="Loading more data...">
+   		<ion-infinite-scroll-content></ion-infinite-scroll-content>
+ </ion-infinite-scroll>
+
 </ion-content>

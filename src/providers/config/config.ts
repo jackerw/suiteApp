@@ -21,6 +21,10 @@ export class ConfigProvider {
   getHomeUrl(){
   	return this.baseUrl+'assets/local-data/home.json';
   }
+  /*获取列表页数据*/
+  getPrdlistUrl(){
+    return this.baseUrl+'assets/local-data/prdlist.json';
+  }
   /*公共提示方法*/
 openTips(content,time,pt){
   let toast = this.toastCtrl.create({

@@ -1,12 +1,20 @@
 .prdhome{
 	ion-slides{height: auto;}
+	.scroll-content{background: #ededed;}
+	.floor_con{background: #fff;}
+	.grid{padding:0;}
 	.banner{
 		.swiper-pagination-bullet{background:0 none;}
 		.swiper-pagination-bullet-active{background: #fff;}
 		button.swiper-pagination-bullet{border:1px solid #fff;opacity: 1;}
 	}
 	.sort{
-		display: flex;justify-content: center;
+		display: flex;justify-content: center;background: #fff;border-bottom:1px solid #ccc;
 		span{width: 20%;min-height: 50px;background: #000;}
+	}
+	.floor_prd{
+		color:#202020;
+		.ftit{margin-top:5px;text-align: center;font-size:16px;padding:10px 0;background: #fff;border-bottom:1px solid #cccccc;}
+		.floor_con{border-bottom:1px solid #ccc;}
 	}
 }

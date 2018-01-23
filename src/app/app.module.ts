@@ -14,6 +14,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { ConfigProvider } from '../providers/config/config';
 import { HomeProvider } from '../providers/home/home';
+import { PrdconProvider } from '../providers/prdcon/prdcon';
 @NgModule({
   declarations: [//模块内部Components/Directives/Pipes的列表，声明一下这个模块内部成员
     MyApp,
@@ -45,7 +46,8 @@ import { HomeProvider } from '../providers/home/home';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ConfigProvider,
-    HomeProvider
+    HomeProvider,
+    PrdconProvider
       ]
 })
 export class AppModule {}
