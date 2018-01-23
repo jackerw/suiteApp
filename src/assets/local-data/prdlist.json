@@ -1,0 +1,43 @@
+{
+  "statusCode":200,
+  "success": true,
+  "message":"请求成功",
+  "content": [
+    {
+      "prdlistId": 1,
+      "prdlistUrl":"http://img1.pianor.com/product/2017/06/01/2017060115082993857.jpg",
+      "prdlistTitle":"定制家居大促销",
+      "price":"15999"
+    },
+  {
+      "prdlistId": 2,
+      "prdlistUrl":"http://img1.pianor.com/product/2017/06/01/2017060115082993857.jpg",
+      "prdlistTitle":"定制家居大促销",
+      "price":"12999"
+    },
+    {
+      "prdlistId": 3,
+      "prdlistUrl":"http://img1.pianor.com/product/2017/06/01/2017060115082993857.jpg",
+      "prdlistTitle":"定制家居大促销",
+      "price":"10999"
+    },
+    {
+      "prdlistId": 4,
+      "prdlistUrl":"http://img1.pianor.com/product/2017/06/01/2017060115082993857.jpg",
+      "prdlistTitle":"定制家居大促销",
+      "price":"10999"
+    },
+    {
+      "prdlistId": 5,
+      "prdlistUrl":"http://img1.pianor.com/product/2017/06/01/2017060115082993857.jpg",
+      "prdlistTitle":"定制家居大促销",
+       "price":"18999"
+    },
+    {
+      "prdlistId": 6,
+      "prdlistUrl":"http://img1.pianor.com/product/2017/06/01/2017060115082993857.jpg",
+      "prdlistTitle":"定制家居大促销",
+       "price":"12999"
+    }
+  ]
+}
