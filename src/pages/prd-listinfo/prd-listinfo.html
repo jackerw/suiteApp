@@ -28,18 +28,21 @@
 			  </ion-row>
 		</ion-grid>
 	</div>
-	<div class="showlist">
-		<div  *ngFor="let items of prdlistData.content">
+	<div class="showlist" (click)="goInfo()">
+		<div  *ngFor="let items of prdlistData">
 			<img src="{{items.prdlistUrl}}">
 			<div class="info">
 				<span>{{items.prdlistTitle}}</span>
 				<em class="price">{{items.price}}元</em>
 			</div>
 		</div>
+		 <ion-infinite-scroll (ionInfinite)="showList($event)" threshold="100px">
+    <ion-infinite-scroll-content
+      loadingSpinner="bubbles"
+      loadingText="Loading more data..." >
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
 	</div>
- <ion-infinite-scroll (ionInfinite)="showList($event)"  loadingSpinner="bubbles"
-      loadingText="Loading more data...">
-   		<ion-infinite-scroll-content></ion-infinite-scroll-content>
- </ion-infinite-scroll>
+
 
 </ion-content>

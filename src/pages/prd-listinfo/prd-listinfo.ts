@@ -16,6 +16,7 @@ import {PrdconProvider} from"../../providers/prdcon/prdcon"
 })
 export class PrdListinfoPage {
   prdlistData:any=[];
+  pageNum:number=1;
   constructor(
   	public navCtrl: NavController,
   	public navParams: NavParams,
@@ -25,13 +26,23 @@ export class PrdListinfoPage {
   }
 
   ionViewDidLoad() {
-    this.PrdconProvider.getPrdListData().then(data=>{
-    	this.prdlistData=data;
-    })
+      this.loadListData(this.pageNum)
+  }
+  loadListData(page:number):void{
+    let last=page*6
+     this.PrdconProvider.getPrdListData().then(data=>{
+          this.prdlistData=data.content.slice(0,last);
+          console.log(this.prdlistData)
+     })
   }
  /*分页*/
  showList(infiniteScroll){
- 	console.log('ok')
-	infiniteScroll.complete();
+/* 	this.pageNum++;
+*//*       this.loadListData(this.pageNum)
+*/	infiniteScroll.complete();
+ }
+ /*跳转详情页*/
+ goInfo(){
+    this.navCtrl.push('PrdConPage')
  }
 }

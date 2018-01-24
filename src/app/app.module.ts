@@ -29,6 +29,7 @@ import { PrdconProvider } from '../providers/prdcon/prdcon';
     BrowserAnimationsModule,
     HttpModule,
     IonicModule.forRoot(MyApp,{
+          backButtonText: "返回",
           mode:'ios'
     })
   ],

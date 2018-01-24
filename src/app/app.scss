@@ -56,7 +56,7 @@ $headbg:#fff;
 .header-ios .toolbar-background-ios, .footer-ios .toolbar-background-ios{border-color: #e5e5e5;}
 .toolbar-background{background: $headbg;}
 .toolbar-title{color: #2e2e2e;font-weight: normal;}
-
+.bar-button-default-ios, .bar-button-default.bar-button-ios-default, .bar-button-clear-ios-default{color:#2e2e2e;}
 /*底部样式*/
 .tabs-ios .tabbar{border-top:1px solid #e0e0e0;}
 .tabs-ios .tab-button{color:#808080;}
