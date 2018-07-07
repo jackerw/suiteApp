@@ -1,0 +1,96 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>首页</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="prdhome">
+<!--轮播图-->
+<ion-slides pager class="banner">
+  <ion-slide  *ngFor="let item of bannerList" >
+    <img src="{{item.banerUrl}}">
+  </ion-slide>
+</ion-slides>
+<!--分类按钮-->
+<!-- <section class="sort">
+	<span>
+		<i></i>
+	</span>
+	<span>
+		<i></i>
+	</span>
+	<span>
+		<i></i>
+	</span>
+	<span>
+		<i></i>
+	</span>
+</section> -->
+<!--楼层广告-->
+<section class="floor_prd">
+	<div class="floor_two">
+		<div class="ftit">
+			<b >热门产品</b>
+		</div>
+		<div class="hot_prd">
+			<div style="width:10000px;">
+				<span>
+					<img src="http://img1.pianor.com/other/2017/08/01/2017080110301314913.jpg">
+				</span>
+				<span>
+					<img src="http://img1.pianor.com/other/2017/08/01/2017080110301314913.jpg">
+				</span>
+				<span>
+					<img src="http://img1.pianor.com/other/2017/08/01/2017080110301314913.jpg">
+				</span>
+				<span>
+					<img src="http://img1.pianor.com/other/2017/08/01/2017080110301314913.jpg">
+				</span>
+				<span>
+					<img src="http://img1.pianor.com/other/2017/08/01/2017080110301314913.jpg">
+				</span>
+				<span>
+					<img src="http://img1.pianor.com/other/2017/08/01/2017080110301314913.jpg">
+				</span>
+				<span>
+					<img src="http://img1.pianor.com/other/2017/08/01/2017080110301314913.jpg">
+				</span>
+			</div>
+			
+		</div>
+	</div>
+	<div class="floor_two">
+		<div class="ftit">
+		<b >为您推荐</b>
+		</div>
+		<ion-grid class="floor_con">
+			<ion-row>
+			    <ion-col col-12><img src="http://img1.pianor.com/other/2017/08/01/2017080110295942321.jpg"></ion-col>
+			</ion-row>
+			<ion-row>
+			    <ion-col col-4><img src="http://img1.pianor.com/other/2017/08/01/2017080110301314913.jpg"></ion-col>
+			    <ion-col col-4><img src="http://img1.pianor.com/other/2017/08/01/2017080110301314913.jpg"></ion-col>
+			    <ion-col col-4><img src="http://img1.pianor.com/other/2017/08/01/2017080110301314913.jpg"></ion-col>
+			</ion-row>
+		</ion-grid>
+	</div>
+	<div class="floor_three">
+		<div class="ftit">
+		<b >风格速递</b>
+		</div>
+		<ion-grid class="floor_con">
+			<ion-row>
+			     <ion-col col-6 class="col_left"><img src="http://img1.pianor.com/other/2017/08/01/2017080110293146011.jpg"></ion-col>
+			     <ion-col col-6 class="col_right">
+			     		<ion-row>
+			     			<ion-col col-12><img src="http://img1.pianor.com/other/2017/08/01/2017080110291590691.jpg"></ion-col>
+			     		</ion-row>
+			     		<ion-row>
+			     			<ion-col col-12><img src="http://img1.pianor.com/other/2017/08/01/2017080110291590691.jpg"></ion-col>
+			     		</ion-row>
+			     </ion-col>
+			</ion-row>
+		</ion-grid>
+	</div>
+</section>
+</ion-content>
+	

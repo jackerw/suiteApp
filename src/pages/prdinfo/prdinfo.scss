@@ -1,0 +1,22 @@
+$prdcolor:#666666;
+.prdlistinfo{
+	color:$prdcolor;font-size:14px;
+	.showhead{
+		font-size:16px;
+		ion-col{text-align: center;position: relative;}
+		ion-col{
+			.sale{position: relative;}
+			.iup{position: absolute;left:38px;top:-3px;}
+			.idown{position: absolute;left:38px;top:4px;}
+		}
+	}
+	.showlist{
+		> div{width:49.5%;float: left;}
+		> div:nth-child(2n){margin-left:1%;}
+		> div .info{padding:2px 0 8px 10px;position: relative;}
+		> div  img{width:100%;}
+		.price{display: block;font-style: normal;color: #c40000;}
+	}
+
+}
+
