@@ -22,7 +22,7 @@ export class HomePage {
     ) {
   }
 
-  ionViewWillEnter() {
+  ionViewDidLoad() {
   	this.HomeProvider.getBanner().then(data=>{
       let blist:any=data;
       this.bannerList=blist.content;
