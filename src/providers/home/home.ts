@@ -13,8 +13,7 @@ import { configUrl } from '../config/config';
 export class HomeProvider {
   //bannerList:any;
   constructor(public http: HttpClient) {
-    console.log('Hello HomeProvider Provider');
-  }
+   }
 
   getBanner(){
   	return new Promise((resolve,reject)=>{

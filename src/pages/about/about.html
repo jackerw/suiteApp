@@ -7,14 +7,29 @@
 </ion-header>
 
 <ion-content>
-	<ion-list>
-		<button ion-item>
-			个人信息
+	<ion-list *ngIf="isLogin">
+		<ion-item>
+		    <ion-avatar item-start>
+		      <img src="assets/imgs/photo.png">
+		    </ion-avatar>
+		    <h2>吴雨杰</h2>
+		    <p>广东省 广州市</p>
+		    <button ion-button color="dark" round class="photo-btn" (click)="changePhoto()">更换头像</button>
+		</ion-item>
+	</ion-list>
+	<ion-list *ngIf="!isLogin">
+		<button ion-item (click)="goLogin()">
+			未登陆
 		</button>
 	</ion-list>
 	<ion-list>
 		<button ion-item>
-			安全设置
+			我的收藏
+		</button>
+	</ion-list>
+	<ion-list>
+		<button ion-item (click)="goSetting()">
+			设置
 		</button>
 	</ion-list>
 </ion-content>

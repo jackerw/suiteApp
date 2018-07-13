@@ -26,7 +26,7 @@ import { PrdlistProvider } from '../providers/prdlist/prdlist';
     BrowserModule,
     HttpClientModule,
     IonicModule.forRoot(MyApp,{
-      //backButtonText: '返回',
+      backButtonText: '返回',
       mode:'ios'
     })
   ],
