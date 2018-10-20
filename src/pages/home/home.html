@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>首页</ion-title>
+    <ion-title>品质起航</ion-title>
   </ion-navbar>
 </ion-header>
 <ion-content class="prdhome">
@@ -33,26 +33,8 @@
 		</div>
 		<div class="hot_prd">
 			<div style="width:10000px;">
-				<span>
-					<img src="http://img1.pianor.com/other/2017/08/01/2017080110301314913.jpg">
-				</span>
-				<span>
-					<img src="http://img1.pianor.com/other/2017/08/01/2017080110301314913.jpg">
-				</span>
-				<span>
-					<img src="http://img1.pianor.com/other/2017/08/01/2017080110301314913.jpg">
-				</span>
-				<span>
-					<img src="http://img1.pianor.com/other/2017/08/01/2017080110301314913.jpg">
-				</span>
-				<span>
-					<img src="http://img1.pianor.com/other/2017/08/01/2017080110301314913.jpg">
-				</span>
-				<span>
-					<img src="http://img1.pianor.com/other/2017/08/01/2017080110301314913.jpg">
-				</span>
-				<span>
-					<img src="http://img1.pianor.com/other/2017/08/01/2017080110301314913.jpg">
+				<span *ngFor="let item of hotList">
+					<img src="{{item.hotUrl}}">
 				</span>
 			</div>
 			

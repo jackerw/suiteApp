@@ -1,12 +1,13 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      设置
+     	随心所置1
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
+	<username [title]="'哈哈哈哈'"></username>
 	<ion-list *ngIf="isLogin">
 		<ion-item>
 		    <ion-avatar item-start>
@@ -29,7 +30,7 @@
 	</ion-list>
 	<ion-list>
 		<button ion-item (click)="goSetting()">
-			设置
+			账号设置
 		</button>
 	</ion-list>
 </ion-content>

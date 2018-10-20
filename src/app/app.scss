@@ -18,3 +18,8 @@
 $maincolor:#d72325;
 $fontcolor:#d72325;
 $headbg:#fff;
+.tabs-ios .tab-button[aria-selected=true] .tab-button-icon,
+.tabs-ios .tab-button:hover:not(.disable-hover), .tabs-ios .tab-button[aria-selected=true],
+.bar-button-default-ios, .bar-button-default.bar-button-ios-default, .bar-button-clear-ios-default{color: #d72325;}
+
+

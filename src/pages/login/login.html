@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar color="primary"  hideBackButton="true">
+    <ion-title>登录</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+ <ion-list>
+  <ion-item>
+    <ion-label floating>用户名</ion-label>
+    <ion-input type="text" [(ngModel)]="username"></ion-input>
+  </ion-item>
+</ion-list>
+ <ion-list>
+ <ion-item>
+    <ion-label floating>密码</ion-label>
+    <ion-input type="password" [(ngModel)]="password"></ion-input>
+  </ion-item>
+</ion-list>
+ <div padding>
+ 	<button ion-button color="primary" full (click)="login()">登陆</button>
+ </div>
+</ion-content>

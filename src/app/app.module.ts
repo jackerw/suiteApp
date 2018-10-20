@@ -12,6 +12,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomeProvider } from '../providers/home/home';
 import { PrdlistProvider } from '../providers/prdlist/prdlist';
+import { ComponentsModule } from '../components/components.module';
+import { Camera } from '@ionic-native/camera';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import { PrdlistProvider } from '../providers/prdlist/prdlist';
     IonicModule.forRoot(MyApp,{
       backButtonText: '返回',
       mode:'ios'
-    })
+    }),
+    ComponentsModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -44,7 +47,8 @@ import { PrdlistProvider } from '../providers/prdlist/prdlist';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     HomeProvider,
-    PrdlistProvider
+    PrdlistProvider,
+    Camera
   ]
 })
 export class AppModule {}

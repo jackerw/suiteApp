@@ -14,7 +14,8 @@ import { HomeProvider} from "../../providers/home/home";
   templateUrl: 'home.html',
 })
 export class HomePage {
-  bannerList:Array<string>
+  bannerList: Array<string>
+  hotList: Array<string>
   constructor(
   	public navCtrl: NavController,
     public navParams: NavParams,
@@ -23,9 +24,12 @@ export class HomePage {
   }
 
   ionViewDidLoad() {
+    
   	this.HomeProvider.getBanner().then(data=>{
       let blist:any=data;
       this.bannerList=blist.content;
+      this.hotList=blist.hot;
+      console.log(this.bannerList)
   	})
   }
 

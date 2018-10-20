@@ -23,5 +23,31 @@
       "banerUrl":"https://m.360buyimg.com/mobilecms/s1125x549_jfs/t14968/175/1692056080/203661/70a1d9c8/5a55e7fcN80ada4f3.jpg!q70.jpg",
       "banerDecrate":"定制家居大促销"
     }
+  ],
+   "hot": [
+    {
+      "hotId": 1,
+      "hotUrl":"http://img1.pianor.com/other/2017/08/01/2017080110304015217.jpg"
+    },
+    {
+      "hotId": 2,
+      "hotUrl":"http://img1.pianor.com/other/2017/08/01/2017080110302860719.jpg"
+    },
+     {
+      "hotId": 3,
+      "hotUrl":"http://img1.pianor.com/other/2017/08/01/2017080110301314913.jpg"
+    },
+      {
+      "hotId": 4,
+      "hotUrl":"http://img1.pianor.com/other/2017/08/01/2017080110301314913.jpg"
+    },
+     {
+      "hotId": 5,
+      "hotUrl":"http://img1.pianor.com/other/2017/08/01/2017080110302860719.jpg"
+    },
+     {
+      "hotId": 6,
+      "hotUrl":"http://img1.pianor.com/other/2017/08/01/2017080110302860719.jpg"
+    }
   ]
 }
